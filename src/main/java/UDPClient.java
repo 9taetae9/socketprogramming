@@ -12,7 +12,7 @@ public class UDPClient {
         DatagramSocket clientSocket = new DatagramSocket();
 
         //DNS를 통해 hostname을 IP 주소로 변환
-        InetAddress ipAddress = InetAddress.getByName("hostname");
+        InetAddress ipAddress = InetAddress.getByName("localhost");
 
         byte[] sendData = new byte[1024];
         byte[] receiveData = new byte[1024];
